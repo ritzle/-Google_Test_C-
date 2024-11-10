@@ -17,9 +17,9 @@ p.s. если не находит путь до библиотек, то пер�
 ### Установка Cmake
 
 1. Устанавливаем Cmake 
-`#0969DA`
+<span style="color: red;">
     sudo snap install cmake
-`#0969DA`
+</span>
 2. Для удобства можно использовать расширения Сmake и CMake Tools
 
 Extension ID(CMake Tools): ms-vscode.cmake-tools 
