@@ -8,7 +8,7 @@
 
 2. Указываем путь к "локальным" заголовочным файлам:
 
-#include "../googletest/googlemock/include/gmock/gmock.h" \
+#include "../googletest/googlemock/include/gmock/gmock.h"   
 #include "../googletest/googletest/include/gtest/gtest.h"
 
 p.s. если не находит путь до библиотек, то перезапускаем пк.
@@ -17,9 +17,9 @@ p.s. если не находит путь до библиотек, то пер�
 
 1. Устанавливаем Cmake 
 
-    sudo snap install cmake \
+    sudo snap install cmake   
 
-2. Для удобства можно использовать расширения Сmake и CMake Tools \
+2. Для удобства можно использовать расширения Сmake и CMake Tools    
 
 Extension ID(CMake Tools): ms-vscode.cmake-tools 
 Extension ID(CMake): twxs.cmake
@@ -61,7 +61,7 @@ target_link_libraries(test_app gtest_main gmock_main)
 
 2. Создаем каталог для сборки и переходим в него:
 
-sudo mkdir build \
+sudo mkdir build    
 cd build
 
 
