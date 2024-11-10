@@ -11,12 +11,12 @@ add_subdirectory(lib/googletest)
 add_executable(test1_app test1.cpp)
 target_link_libraries(test1_app gtest_main gmock_main)
 
-
-# Создаем исполнимый файл для test1.cpp
+# Создаем исполнимый файл для test2.cpp
 add_executable(test2_app test2.cpp)
 target_link_libraries(test2_app gtest_main gmock_main)
 
-# Создаем исполнимый файл
-add_executable(test_app main.cpp)
-target_link_libraries(test_app gtest_main gmock_main)
+# Создаем исполнимый файл для test3.cpp
+add_executable(test3_app test3.cpp)
+target_link_libraries(test3_app gtest_main gmock_main)
+
 
