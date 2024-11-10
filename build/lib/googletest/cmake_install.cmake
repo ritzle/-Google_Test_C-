@@ -1,4 +1,4 @@
-# Install script for directory: /home/vlad/vsCode/Google_Test/-Google_Test_C-/lib/googletest
+# Install script for directory: /home/vlad/vsCode/GoogleTest/-Google_Test_C-/lib/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vlad/vsCode/Google_Test/-Google_Test_C-/build/lib/googletest/googlemock/cmake_install.cmake")
+  include("/home/vlad/vsCode/GoogleTest/-Google_Test_C-/build/lib/googletest/googlemock/cmake_install.cmake")
 
 endif()
 

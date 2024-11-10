@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/vlad/vsCode/Google_Test/-Google_Test_C-/lib/googletest/googletest/include -isystem /home/vlad/vsCode/Google_Test/-Google_Test_C-/lib/googletest/googletest
+CXX_INCLUDES = -isystem /home/vlad/vsCode/GoogleTest/-Google_Test_C-/lib/googletest/googletest/include -isystem /home/vlad/vsCode/GoogleTest/-Google_Test_C-/lib/googletest/googletest
 
 CXX_FLAGS = -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
 

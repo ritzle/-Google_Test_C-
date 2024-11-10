@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vlad/vsCode/Google_Test/-Google_Test_C-
+CMAKE_SOURCE_DIR = /home/vlad/vsCode/GoogleTest/-Google_Test_C-
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vlad/vsCode/Google_Test/-Google_Test_C-/build
+CMAKE_BINARY_DIR = /home/vlad/vsCode/GoogleTest/-Google_Test_C-/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vlad/vsCode/Google_Test/-Google_Test_C-/build/CMakeFiles /home/vlad/vsCode/Google_Test/-Google_Test_C-/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vlad/vsCode/GoogleTest/-Google_Test_C-/build/CMakeFiles /home/vlad/vsCode/GoogleTest/-Google_Test_C-/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vlad/vsCode/Google_Test/-Google_Test_C-/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vlad/vsCode/GoogleTest/-Google_Test_C-/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,17 +198,56 @@ test2_app/fast:
 .PHONY : test2_app/fast
 
 #=============================================================================
-# Target rules for targets named test_app
+# Target rules for targets named test3_app
 
 # Build rule for target.
-test_app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_app
-.PHONY : test_app
+test3_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test3_app
+.PHONY : test3_app
 
 # fast build rule for target.
-test_app/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/build
-.PHONY : test_app/fast
+test3_app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test3_app.dir/build.make CMakeFiles/test3_app.dir/build
+.PHONY : test3_app/fast
+
+#=============================================================================
+# Target rules for targets named test4_app
+
+# Build rule for target.
+test4_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test4_app
+.PHONY : test4_app
+
+# fast build rule for target.
+test4_app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test4_app.dir/build.make CMakeFiles/test4_app.dir/build
+.PHONY : test4_app/fast
+
+#=============================================================================
+# Target rules for targets named coverage
+
+# Build rule for target.
+coverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 coverage
+.PHONY : coverage
+
+# fast build rule for target.
+coverage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coverage.dir/build.make CMakeFiles/coverage.dir/build
+.PHONY : coverage/fast
+
+#=============================================================================
+# Target rules for targets named gen_coverage_report
+
+# Build rule for target.
+gen_coverage_report: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gen_coverage_report
+.PHONY : gen_coverage_report
+
+# fast build rule for target.
+gen_coverage_report/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gen_coverage_report.dir/build.make CMakeFiles/gen_coverage_report.dir/build
+.PHONY : gen_coverage_report/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -262,30 +301,6 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f lib/googletest/googletest/CMakeFiles/gtest_main.dir/build.make lib/googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_app.dir/build.make CMakeFiles/test_app.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 test1.o: test1.cpp.o
 .PHONY : test1.o
 
@@ -334,6 +349,54 @@ test2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2_app.dir/build.make CMakeFiles/test2_app.dir/test2.cpp.s
 .PHONY : test2.cpp.s
 
+test3.o: test3.cpp.o
+.PHONY : test3.o
+
+# target to build an object file
+test3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test3_app.dir/build.make CMakeFiles/test3_app.dir/test3.cpp.o
+.PHONY : test3.cpp.o
+
+test3.i: test3.cpp.i
+.PHONY : test3.i
+
+# target to preprocess a source file
+test3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test3_app.dir/build.make CMakeFiles/test3_app.dir/test3.cpp.i
+.PHONY : test3.cpp.i
+
+test3.s: test3.cpp.s
+.PHONY : test3.s
+
+# target to generate assembly for a file
+test3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test3_app.dir/build.make CMakeFiles/test3_app.dir/test3.cpp.s
+.PHONY : test3.cpp.s
+
+test4.o: test4.cpp.o
+.PHONY : test4.o
+
+# target to build an object file
+test4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test4_app.dir/build.make CMakeFiles/test4_app.dir/test4.cpp.o
+.PHONY : test4.cpp.o
+
+test4.i: test4.cpp.i
+.PHONY : test4.i
+
+# target to preprocess a source file
+test4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test4_app.dir/build.make CMakeFiles/test4_app.dir/test4.cpp.i
+.PHONY : test4.cpp.i
+
+test4.s: test4.cpp.s
+.PHONY : test4.s
+
+# target to generate assembly for a file
+test4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test4_app.dir/build.make CMakeFiles/test4_app.dir/test4.cpp.s
+.PHONY : test4.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -347,22 +410,28 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... coverage"
+	@echo "... gen_coverage_report"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... test1_app"
 	@echo "... test2_app"
-	@echo "... test_app"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... test3_app"
+	@echo "... test4_app"
 	@echo "... test1.o"
 	@echo "... test1.i"
 	@echo "... test1.s"
 	@echo "... test2.o"
 	@echo "... test2.i"
 	@echo "... test2.s"
+	@echo "... test3.o"
+	@echo "... test3.i"
+	@echo "... test3.s"
+	@echo "... test4.o"
+	@echo "... test4.i"
+	@echo "... test4.s"
 .PHONY : help
 
 

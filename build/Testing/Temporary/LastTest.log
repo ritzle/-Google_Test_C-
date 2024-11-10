@@ -1,0 +1,154 @@
+Start testing: Nov 11 02:51 +07
+----------------------------------------------------------
+1/4 Testing: Test1
+1/4 Test: Test1
+Command: "/home/vlad/vsCode/GoogleTest/-Google_Test_C-/build/test1_app"
+Directory: /home/vlad/vsCode/GoogleTest/-Google_Test_C-/build
+"Test1" start time: Nov 11 02:51 +07
+Output:
+----------------------------------------------------------
+[==========] Running 4 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from TestGroup_Assert
+[ RUN      ] TestGroup_Assert.Subtest_1
+1 = 1
+[       OK ] TestGroup_Assert.Subtest_1 (0 ms)
+[ RUN      ] TestGroup_Assert.Subtest_2
+/home/vlad/vsCode/GoogleTest/-Google_Test_C-/test1.cpp:17: Failure
+Value of: 1 == 1
+  Actual: true
+Expected: false
+
+[  FAILED  ] TestGroup_Assert.Subtest_2 (0 ms)
+[----------] 2 tests from TestGroup_Assert (0 ms total)
+
+[----------] 2 tests from TestGroupName_Expect
+[ RUN      ] TestGroupName_Expect.Subtest_1
+/home/vlad/vsCode/GoogleTest/-Google_Test_C-/test1.cpp:12: Failure
+Value of: 1 == 2
+  Actual: false
+Expected: true
+
+1 = 2
+[  FAILED  ] TestGroupName_Expect.Subtest_1 (0 ms)
+[ RUN      ] TestGroupName_Expect.Subtest_2
+1 = 2
+[       OK ] TestGroupName_Expect.Subtest_2 (0 ms)
+[----------] 2 tests from TestGroupName_Expect (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 2 test suites ran. (0 ms total)
+[  PASSED  ] 2 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] TestGroup_Assert.Subtest_2
+[  FAILED  ] TestGroupName_Expect.Subtest_1
+
+ 2 FAILED TESTS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"Test1" end time: Nov 11 02:51 +07
+"Test1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: Test2
+2/4 Test: Test2
+Command: "/home/vlad/vsCode/GoogleTest/-Google_Test_C-/build/test2_app"
+Directory: /home/vlad/vsCode/GoogleTest/-Google_Test_C-/build
+"Test2" start time: Nov 11 02:51 +07
+Output:
+----------------------------------------------------------
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from MathAppTest
+[ RUN      ] MathAppTest.CalculateSum
+[       OK ] MathAppTest.CalculateSum (0 ms)
+[ RUN      ] MathAppTest.CalculateDifference
+[       OK ] MathAppTest.CalculateDifference (0 ms)
+[ RUN      ] MathAppTest.CalculateProduct
+[       OK ] MathAppTest.CalculateProduct (0 ms)
+[----------] 3 tests from MathAppTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Test2" end time: Nov 11 02:51 +07
+"Test2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: Test3
+3/4 Test: Test3
+Command: "/home/vlad/vsCode/GoogleTest/-Google_Test_C-/build/test3_app"
+Directory: /home/vlad/vsCode/GoogleTest/-Google_Test_C-/build
+"Test3" start time: Nov 11 02:51 +07
+Output:
+----------------------------------------------------------
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from OrderTest
+[ RUN      ] OrderTest.PlaceOrder_Success
+[       OK ] OrderTest.PlaceOrder_Success (0 ms)
+[ RUN      ] OrderTest.PlaceOrder_ProductUnavailable
+[       OK ] OrderTest.PlaceOrder_ProductUnavailable (0 ms)
+[ RUN      ] OrderTest.PlaceOrder_PaymentFailed
+[       OK ] OrderTest.PlaceOrder_PaymentFailed (0 ms)
+[----------] 3 tests from OrderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Test3" end time: Nov 11 02:51 +07
+"Test3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: Test4
+4/4 Test: Test4
+Command: "/home/vlad/vsCode/GoogleTest/-Google_Test_C-/build/test4_app"
+Directory: /home/vlad/vsCode/GoogleTest/-Google_Test_C-/build
+"Test4" start time: Nov 11 02:51 +07
+Output:
+----------------------------------------------------------
+[==========] Running 9 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 9 tests from MathAppTests/MathAppTest
+[ RUN      ] MathAppTests/MathAppTest.CalculateSum/0
+[       OK ] MathAppTests/MathAppTest.CalculateSum/0 (0 ms)
+[ RUN      ] MathAppTests/MathAppTest.CalculateSum/1
+[       OK ] MathAppTests/MathAppTest.CalculateSum/1 (0 ms)
+[ RUN      ] MathAppTests/MathAppTest.CalculateSum/2
+[       OK ] MathAppTests/MathAppTest.CalculateSum/2 (0 ms)
+[ RUN      ] MathAppTests/MathAppTest.CalculateDifference/0
+[       OK ] MathAppTests/MathAppTest.CalculateDifference/0 (0 ms)
+[ RUN      ] MathAppTests/MathAppTest.CalculateDifference/1
+[       OK ] MathAppTests/MathAppTest.CalculateDifference/1 (0 ms)
+[ RUN      ] MathAppTests/MathAppTest.CalculateDifference/2
+[       OK ] MathAppTests/MathAppTest.CalculateDifference/2 (0 ms)
+[ RUN      ] MathAppTests/MathAppTest.CalculateProduct/0
+[       OK ] MathAppTests/MathAppTest.CalculateProduct/0 (0 ms)
+[ RUN      ] MathAppTests/MathAppTest.CalculateProduct/1
+[       OK ] MathAppTests/MathAppTest.CalculateProduct/1 (0 ms)
+[ RUN      ] MathAppTests/MathAppTest.CalculateProduct/2
+[       OK ] MathAppTests/MathAppTest.CalculateProduct/2 (0 ms)
+[----------] 9 tests from MathAppTests/MathAppTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 9 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Test4" end time: Nov 11 02:51 +07
+"Test4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 11 02:51 +07

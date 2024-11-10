@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/vlad/vsCode/Google_Test/-Google_Test_C-/lib/googletest/googletest/include -isystem /home/vlad/vsCode/Google_Test/-Google_Test_C-/lib/googletest/googletest -isystem /home/vlad/vsCode/Google_Test/-Google_Test_C-/lib/googletest/googlemock/include -isystem /home/vlad/vsCode/Google_Test/-Google_Test_C-/lib/googletest/googlemock
+CXX_INCLUDES = -isystem /home/vlad/vsCode/GoogleTest/-Google_Test_C-/lib/googletest/googletest/include -isystem /home/vlad/vsCode/GoogleTest/-Google_Test_C-/lib/googletest/googletest -isystem /home/vlad/vsCode/GoogleTest/-Google_Test_C-/lib/googletest/googlemock/include -isystem /home/vlad/vsCode/GoogleTest/-Google_Test_C-/lib/googletest/googlemock
 
-CXX_FLAGS = 
+CXX_FLAGS =  -fprofile-arcs -ftest-coverage
 
