@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/test1_app.dir/test1.cpp.o -o test1_app  lib/libgtest_main.a lib/libgmock_main.a lib/libgmock.a lib/libgtest.a 
