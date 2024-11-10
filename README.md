@@ -1,4 +1,4 @@
-# -Google_Test_C-
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Google_+Test+_CPP)](https://git.io/typing-svg)
 
 ## Установка библиотеки GTest, GMock
 
@@ -34,7 +34,7 @@ Extension ID(CMake): twxs.cmake
 В CMakeLists.txt вставляем следующее:
 
 ---------------------------------------------------------
-`#0969DA`
+
 cmake_minimum_required(VERSION 3.0)
 
 project("gtest")
@@ -56,23 +56,23 @@ target_link_libraries(test2_app gtest_main gmock_main)
 
 add_executable(test_app main.cpp)
 target_link_libraries(test_app gtest_main gmock_main)
-`#0969DA`
+
 
 ---------------------------------------------------------
 
 2. Создаем каталог для сборки и переходим в него:
-`#0969DA`
+
 sudo mkdir build
 cd build
-`#0969DA`
+
 
 3. В этом каталоге запускаем команду:
-`#0969DA`
+
 sudo cmake ..
-`#0969DA`
+
 Две точки рядом с cmake означают, что нужно искать файл сценария CMakeLists.txt в родительском каталоге. Эта команда сгенерирует набор инструкций для компиляции и сборки библиотек gtest и gmock.
 
 4. Далее компилируем с помощью команды:
-`#0969DA`
+
 sudo make
-`#0969DA`
+
