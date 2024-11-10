@@ -19,4 +19,8 @@ target_link_libraries(test2_app gtest_main gmock_main)
 add_executable(test3_app test3.cpp)
 target_link_libraries(test3_app gtest_main gmock_main)
 
+# Создаем исполнимый файл для test4.cpp
+add_executable(test4_app test4.cpp)
+target_link_libraries(test4_app gtest_main gmock_main)
+
 
