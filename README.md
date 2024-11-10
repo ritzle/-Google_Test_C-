@@ -21,7 +21,7 @@ p.s. если не находит путь до библиотек, то пер�
 
 2. Для удобства можно использовать расширения Сmake и CMake Tools    
 
-Extension ID(CMake Tools): ms-vscode.cmake-tools 
+Extension ID(CMake Tools): ms-vscode.cmake-tools    
 Extension ID(CMake): twxs.cmake
 
 ### Создание СMakeLists.txt и компиляция
