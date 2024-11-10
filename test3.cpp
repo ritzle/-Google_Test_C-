@@ -1,20 +1,20 @@
 #include "lib/googletest/googlemock/include/gmock/gmock.h"
 #include "lib/googletest/googletest/include/gtest/gtest.h"
 
-class ProductService {
+class ProductServiceInterface {
  public:
-  virtual ~ProductService() = default;
+  virtual ~ProductServiceInterface() = default;
   virtual bool isProductAvailable(const std::string& productId) = 0;
   virtual double getProductPrice(const std::string& productId) = 0;
 };
 
-class PaymentService {
+class PaymentServiceInterface {
  public:
-  virtual ~PaymentService() = default;
+  virtual ~PaymentServiceInterface() = default;
   virtual bool processPayment(double amount) = 0;
 };
 
-class MockProductService : public ProductService {
+class MockProductService : public ProductServiceInterface {
  public:
   MOCK_METHOD(bool, isProductAvailable, (const std::string& productId),
               (override));
@@ -22,18 +22,19 @@ class MockProductService : public ProductService {
               (override));
 };
 
-class MockPaymentService : public PaymentService {
+class MockPaymentService : public PaymentServiceInterface {
  public:
   MOCK_METHOD(bool, processPayment, (double amount), (override));
 };
 
 class Order {
  private:
-  ProductService* productService_;
-  PaymentService* paymentService_;
+  ProductServiceInterface* productService_;
+  PaymentServiceInterface* paymentService_;
 
  public:
-  Order(ProductService* productService, PaymentService* paymentService)
+  Order(ProductServiceInterface* productService,
+        PaymentServiceInterface* paymentService)
       : productService_(productService), paymentService_(paymentService) {}
 
   bool placeOrder(const std::string& productId, int quantity) {
