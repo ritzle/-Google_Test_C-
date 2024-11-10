@@ -3,6 +3,8 @@
 #include "lib/googletest/googlemock/include/gmock/gmock.h"
 #include "lib/googletest/googletest/include/gtest/gtest.h"
 
+using namespace std;
+
 class CalculatorInterface {
  public:
   virtual ~CalculatorInterface() = default;
@@ -30,7 +32,7 @@ class MathApp {
 };
 
 // Параметризованный тест для MathApp
-class MathAppTest : public ::testing::TestWithParam<std::vector<int>> {
+class MathAppTest : public ::testing::TestWithParam<vector<int>> {
  protected:
   CalculatorMock calculator_mock;
   MathApp* math_app;
@@ -80,14 +82,13 @@ TEST_P(MathAppTest, CalculateProduct) {
   ASSERT_EQ(result, expectedProduct);
 }
 
-// Определение параметров для тестов через std::vector
+// Определение параметров для тестов через vector
 INSTANTIATE_TEST_SUITE_P(
     MathAppTests, MathAppTest,
     ::testing::Values(
-        std::vector<int>{3, 5, 8, 2, 15},  // 3 + 5 = 8, 3 - 5 = -2, 3 * 5 = 15
-        std::vector<int>{10, 4, 14, 6,
-                         40},  // 10 + 4 = 14, 10 - 4 = 6, 10 * 4 = 40
-        std::vector<int>{7, 2, 9, 5, 14}  // 7 + 2 = 9, 7 - 2 = 5, 7 * 2 = 14
+        vector<int>{3, 5, 8, 2, 15},    // 3 + 5 = 8, 3 - 5 = -2, 3 * 5 = 15
+        vector<int>{10, 4, 14, 6, 40},  // 10 + 4 = 14, 10 - 4 = 6, 10 * 4 = 40
+        vector<int>{7, 2, 9, 5, 14}     // 7 + 2 = 9, 7 - 2 = 5, 7 * 2 = 14
         ));
 
 int main(int argc, char** argv) {
