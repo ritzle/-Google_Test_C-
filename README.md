@@ -39,7 +39,7 @@ cmake_minimum_required(VERSION 3.0)
 
 project("gtest")
 
-<p style="display: inline; color: blue; font-size: 20px;">&#9679;</p> Включаем поддержку тестов  
+<span style="display:inline-block; width:10px; height:10px; background-color:#FF5733; border-radius:50%; margin-right:5px;"></span>Включаем поддержку тестов  
 
 enable_testing()
 
