@@ -1,5 +1,5 @@
 # [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=2500&pause=3&multiline=true&width=435&lines=Google+Test+C_plus_plus)](https://git.io/typing-svg)
-## Установка библиотеки GTest, GMock
+## <p style="color: blue; font-size: 24px;">&#9679;</p> Установка библиотеки GTest, GMock
 
 1. Клонируем официальный репозиторий в свой проект либо отдельную папку.
 
@@ -39,7 +39,7 @@ cmake_minimum_required(VERSION 3.0)
 project("gtest")
 
  Включаем поддержку тестов  
- 
+
 enable_testing()
 
  Добавляем подкаталог с GoogleTest  
