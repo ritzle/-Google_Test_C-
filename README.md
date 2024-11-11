@@ -94,18 +94,20 @@ add_custom_target(
 
 2. Команды для сборки проекта с представлением покрытия тестов в формате HTML
 ```
-cmake -B build -S ..
+cmake ..
 ```
 ```
-cmake --build build
+make
 ```
 ```
-lcov --capture --directory . --output-file coverage.info --include 'test1.cpp' --include 'test2.cpp' --include 'test3.cpp' --include 'test4.cpp' --ignore-errors mismatch
+make coverage
 ```
 ```
-genhtml coverage.info --output-directory coverage_report
+lcov --capture --directory . --output-file coverage.info --include 'test*.cpp' --ignore-errors mismatch
 ```
 ```
-genhtml coverage.info --output-directory coverage_report --title "Coverage Report" --legend
+lcov --remove coverage.info '/usr/*' '*gtest*' '*.h' -o filtered_coverage.info
 ```
-
+```
+genhtml filtered_coverage.info --output-directory coverage_report --title"Coverage Report" --legend
+```
