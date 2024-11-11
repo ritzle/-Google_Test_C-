@@ -1,7 +1,7 @@
 # [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=2500&pause=3&multiline=true&width=435&lines=Google+Test+C_plus_plus)](https://git.io/typing-svg)  
 
-## <p style="display: inline; color: blue; font-size: 24px;">&#4444;</p>Установка библиотеки GTest, GMock
-
+## Установка библиотеки GTest, GMock
+<hr style="border: 1px solid red;">
 1. Клонируем официальный репозиторий в свой проект либо отдельную папку.
 
 `git clone` https://github.com/google/googletest.git
@@ -15,7 +15,7 @@ p.s. если не находит путь до библиотек, то пер�
 p.s.s. если работаете с наши репозиторием, то библиотеку Google Test клонируйте в папку lib     
 
 ## Установка Cmake
-
+<hr style="border: 1px solid red;">
 1. Устанавливаем Cmake 
 
     sudo snap install cmake   
@@ -26,7 +26,7 @@ Extension ID(CMake Tools): ms-vscode.cmake-tools
 Extension ID(CMake): twxs.cmake
 
 ### Создание СMakeLists.txt и компиляция
-
+<hr style="border: 1px solid red;">
 Для компиляции нужно использовать CMake.
 
 1. Создаем СMakeLists.txt (в точности как написано).
@@ -34,7 +34,7 @@ Extension ID(CMake): twxs.cmake
 В CMakeLists.txt вставляем следующее:
 
 ---------------------------------------------------------
-
+```cmake
 cmake_minimum_required(VERSION 3.0)
 
 project("gtest")
@@ -92,7 +92,7 @@ add_custom_target(
     DEPENDS coverage
     COMMENT "Generating coverage report"
 )
-
+```
 
 ---------------------------------------------------------
 
