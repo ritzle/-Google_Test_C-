@@ -1,4 +1,5 @@
-# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=2500&pause=3&multiline=true&width=435&lines=Google+Test+C_plus_plus)](https://git.io/typing-svg)  
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=2500&pause=3&multiline=true&width=435&lines=Google+Test+C_plus_plus)](https://git.io/typing-svg) 
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F70202&background=E0FFA000&width=530&lines=%D0%90%D0%91%D1%81-323+%D0%9F%D1%83%D1%88%D0%BA%D0%B0%D1%80%D0%B5%D0%B2+%D0%92%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D0%B9%2C+%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D0%BE%D0%B2+%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D0%BB%D0%B0%D0%B2)](https://git.io/typing-svg)
 
 ### Установка библиотеки GTest, GMock
 <hr style="border: 1px solid red;">
@@ -108,4 +109,3 @@ genhtml coverage.info --output-directory coverage_report
 genhtml coverage.info --output-directory coverage_report --title "Coverage Report" --legend
 ```
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F70202&background=E0FFA000&width=530&lines=%D0%90%D0%91%D1%81-323+%D0%9F%D1%83%D1%88%D0%BA%D0%B0%D1%80%D0%B5%D0%B2+%D0%92%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D0%B9%2C+%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D0%BE%D0%B2+%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D0%BB%D0%B0%D0%B2)](https://git.io/typing-svg)
