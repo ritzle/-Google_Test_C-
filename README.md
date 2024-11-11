@@ -2,7 +2,8 @@
 
 ### Установка библиотеки GTest, GMock
 <hr style="border: 1px solid red;">
-1. Клонируем официальный репозиторий в свой проект либо отдельную папку.
+1. Клонируем официальный репозиторий в свой проект либо отдельную папку.  
+
 
 `git clone` https://github.com/google/googletest.git
 
@@ -12,7 +13,7 @@
 #include "../googletest/googletest/include/gtest/gtest.h"
 
 p.s. если не находит путь до библиотек, то перезапускаем пк.    
-p.s.s. если работаете с наши репозиторием, то библиотеку Google Test клонируйте в папку lib     
+p.s.s. если работаете с нашим репозиторием, то библиотеку Google Test клонируйте в папку lib     
 
 ### Установка Cmake
 <hr style="border: 1px solid red;">
@@ -21,10 +22,10 @@ p.s.s. если работаете с наши репозиторием, то б
     sudo snap install cmake   
 
 2. Для удобства можно использовать расширения Сmake и CMake Tools    
-
+```
 Extension ID(CMake Tools): ms-vscode.cmake-tools    
 Extension ID(CMake): twxs.cmake
-
+```
 #### Создание СMakeLists.txt и компиляция
 <hr style="border: 1px solid red;">
 Для компиляции нужно использовать CMake.
