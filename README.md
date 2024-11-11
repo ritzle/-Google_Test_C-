@@ -6,9 +6,9 @@
 `git clone` https://github.com/google/googletest.git
 
 
-2. Указываем путь к "локальным" заголовочным файлам:
+2. Указываем путь к "локальным" заголовочным файлам:    
 
-#include "../googletest/googlemock/include/gmock/gmock.h"   
+<span style="color: red;">#include "../googletest/googlemock/include/gmock/gmock.h"  </span>      
 #include "../googletest/googletest/include/gtest/gtest.h"
 
 p.s. если не находит путь до библиотек, то перезапускаем пк.
