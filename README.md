@@ -8,10 +8,10 @@
 `git clone` https://github.com/google/googletest.git
 
 2. Указываем путь к "локальным" заголовочным файлам:
-
+```
 #include "../googletest/googlemock/include/gmock/gmock.h"   
 #include "../googletest/googletest/include/gtest/gtest.h"
-
+```
 p.s. если не находит путь до библиотек, то перезапускаем пк.    
 p.s.s. если работаете с нашим репозиторием, то библиотеку Google Test клонируйте в папку lib     
 
@@ -28,7 +28,8 @@ Extension ID(CMake): twxs.cmake
 ```
 #### Создание СMakeLists.txt и компиляция
 <hr style="border: 1px solid red;">
-Для компиляции нужно использовать CMake.
+Для компиляции нужно использовать CMake.  
+
 
 1. Создаем СMakeLists.txt (в точности как написано).
 
@@ -90,21 +91,21 @@ add_custom_target(
 
 ---------------------------------------------------------
 
-2. Создаем каталог для сборки и переходим в него:
-
-sudo mkdir build    
-cd build
-
-
-3. В этом каталоге запускаем команду:
-
-sudo cmake ..
-
-Две точки рядом с cmake означают, что нужно искать файл сценария CMakeLists.txt в родительском каталоге. Эта команда сгенерирует набор инструкций для компиляции и сборки библиотек gtest и gmock.
-
-4. Далее компилируем с помощью команды:
-
-sudo make
-
+2. Команды для сборки проекта с представлением покрытия тестов в формате HTML
+```
+cmake -B build -S ..
+```
+```
+cmake --build build
+```
+```
+lcov --capture --directory . --output-file coverage.info --include 'test1.cpp' --include 'test2.cpp' --include 'test3.cpp' --include 'test4.cpp' --ignore-errors mismatch
+```
+```
+genhtml coverage.info --output-directory coverage_report
+```
+```
+genhtml coverage.info --output-directory coverage_report --title "Coverage Report" --legend
+```
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F70202&background=E0FFA000&width=530&lines=%D0%90%D0%91%D1%81-323+%D0%9F%D1%83%D1%88%D0%BA%D0%B0%D1%80%D0%B5%D0%B2+%D0%92%D0%B8%D1%82%D0%B0%D0%BB%D0%B8%D0%B9%2C+%D0%A0%D1%8F%D0%B7%D0%B0%D0%BD%D0%BE%D0%B2+%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D0%BB%D0%B0%D0%B2)](https://git.io/typing-svg)
