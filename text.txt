@@ -1,0 +1,8 @@
+cmake ..
+make
+
+make coverage
+lcov --capture --directory . --output-file coverage.info --include 'test*.cpp' --ignore-errors mismatch
+
+lcov --remove coverage.info '/usr/*' '*gtest*' '*.h' -o filtered_coverage.info
+genhtml filtered_coverage.info --output-directory coverage_report --title "Coverage Report" --legend
